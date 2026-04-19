@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE = '';
+const BASE = 'https://pretika-api-1.onrender.com';
 
 const api = axios.create({
   baseURL: BASE,
