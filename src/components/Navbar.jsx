@@ -95,12 +95,13 @@ export default function Navbar() {
       background: 'linear-gradient(135deg, #26215C 0%, #3C3489 60%, #2D2640 100%)',
       borderBottom: '1px solid rgba(255,255,255,0.05)',
       boxShadow: '0 4px 20px rgba(0,0,0,0.15)',
-      overflow: 'hidden'
     }}>
       {/* Decorative Circles matching Flutter _CircleBgPainter */}
-      <div style={{ position: 'absolute', top: -50, right: -50, width: 150, height: 150, borderRadius: '50%', background: 'rgba(255,255,255,0.03)' }} />
-      <div style={{ position: 'absolute', top: 20, right: 60, width: 80, height: 80, borderRadius: '50%', background: 'rgba(255,255,255,0.04)' }} />
-      <div style={{ position: 'absolute', bottom: -30, left: 100, width: 120, height: 120, borderRadius: '50%', background: 'rgba(255,255,255,0.02)' }} />
+      <div style={{ position: 'absolute', inset: 0, overflow: 'hidden', pointerEvents: 'none', zIndex: 0 }}>
+        <div style={{ position: 'absolute', top: -50, right: -50, width: 150, height: 150, borderRadius: '50%', background: 'rgba(255,255,255,0.03)' }} />
+        <div style={{ position: 'absolute', top: 20, right: 60, width: 80, height: 80, borderRadius: '50%', background: 'rgba(255,255,255,0.04)' }} />
+        <div style={{ position: 'absolute', bottom: -30, left: 100, width: 120, height: 120, borderRadius: '50%', background: 'rgba(255,255,255,0.02)' }} />
+      </div>
 
       <div className="container" style={{
         position: 'relative',
